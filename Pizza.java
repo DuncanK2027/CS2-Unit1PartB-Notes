@@ -6,7 +6,9 @@ public class Pizza {
     boolean hasPep;
     boolean hasChicken;
     boolean hasPineapple;
-    boolrsn isBaked;
+    boolean isBaked;
+    boolean isPurchased;
+    boolean isSold;
 
     double price; 
     int servingSize;
@@ -37,5 +39,14 @@ public class Pizza {
         isBaked = true;
         System.out.println("Your pizza is hot and ready!");
     }
-}
 
+    public void sellPizza() {
+        isSold = true;
+    }
+
+    public void purchasePizza() {
+        isPurchased = true;
+        System.out.println("Payment accepted!");
+    }
+
+}
